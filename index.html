@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator TPM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"></div>
+    <h1>Kalkulator TPM Infus</h1>
+
+    <p>Volume Cairan (mL)</p>
+    <input type="number" id="volume" placeholder="Masukkan volume cairan dalam mL">
+
+    <p>Jam</p>
+    <input type="number" id="jam" placeholder="Masukkan durasi dalam jam">
+
+    <p>Menit</p>
+    <input type="number" id="menit" placeholder="Masukkan menit">
+
+    <p>Faktor Tetes</p>
+    <select id="faktor">
+        <option>15</option>
+        <option>20</option>
+        <option>60</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="hitungTPM()">Hitung</button>
+
+    <h2 id="hasil">TPM: -</h2>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
