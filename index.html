@@ -4,33 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator TPM</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2966/2966486.png">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container"></div>
-    <h1>Kalkulator TPM Infus</h1>
 
-    <p>Volume Cairan (mL)</p>
-    <input type="number" id="volume" placeholder="Masukkan volume cairan dalam mL">
+<div class="wrapper">
 
-    <p>Jam</p>
-    <input type="number" id="jam" placeholder="Masukkan durasi dalam jam">
+    <div class="container">
 
-    <p>Menit</p>
-    <input type="number" id="menit" placeholder="Masukkan menit">
+        <div class="header">
+            <div class="badge">💉 Nursing Tool</div>
+            <h1>Kalkulator TPM Infus</h1>
+            <p>Hitung tetesan per menit secara cepat dan akurat</p>
+        </div>
 
-    <p>Faktor Tetes</p>
-    <select id="faktor">
-        <option>15</option>
-        <option>20</option>
-        <option>60</option>
-    </select>
+        <p>Volume Cairan (mL)</p>
+        <input type="number" id="volume" placeholder="Masukkan volume cairan dalam mL">
 
-    <br><br>
+        <p>Jam</p>
+        <input type="number" id="jam" placeholder="Masukkan durasi dalam jam">
 
-    <button onclick="hitungTPM()">Hitung</button>
+        <p>Menit</p>
+        <input type="number" id="menit" placeholder="Masukkan menit">
 
-    <h2 id="hasil">TPM: -</h2>
+        <p>Faktor Tetes</p>
+        <select id="faktor">
+            <option>15</option>
+            <option>20</option>
+            <option>60</option>
+        </select>
+
+        <button onclick="hitungTPM()">Hitung</button>
+
+        <!-- HASIL -->
+        <div class="hasil-box">
+            <h2 id="hasil">TPM: -</h2>
+        </div>
+
     </div>
+
+    <!-- FOOTER (SUDAH BENAR POSISI) -->
+    <footer class="footer">
+        © 2026 Sheril Ulya Sabrina • 
+        <a href="https://sherillabs.github.io/tpm-calculator/" target="_blank">
+            tpm-calculator
+        </a>
+    </footer>
+
+</div>
+
 <script src="script.js"></script>
+
 </body>
 </html>
